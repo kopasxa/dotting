@@ -3506,8 +3506,9 @@ export default class Editor extends EventDispatcher {
       const anchor = document.createElement("a");
 
       anchor.href = imageCanvas.toDataURL("image/png");
-      anchor.download = "dotting.png";
-      anchor.click();
+      console.log(anchor.href);
+      // anchor.download = "dotting.png";
+      // anchor.click();
     } else if (options.type === "svg") {
       const svgDom = document.createElementNS(
         "http://www.w3.org/2000/svg",
